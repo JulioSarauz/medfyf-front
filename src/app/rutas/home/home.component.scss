@@ -1,0 +1,46 @@
+.cabecera{
+    background-color:rgb(8, 168, 142) ;
+    background-image: url("./../../../assets/img/medi1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    
+    
+}
+
+.cabecera > h1 {
+background-color: rgb(8, 168, 142) ;
+width: 20%;
+padding-top: 5%;
+padding-bottom: 5%;
+border-radius:150px 0px 150px 0px;
+}
+
+.cuerpo {
+    background-color: rgb(8, 168, 142) ;
+    margin: 2% 2% 5% 2% ;
+    border-radius: 0px 150px 150px 0px;
+    color: white;
+}
+
+.cuerpo-header{
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.cuerpo-cuerpo{
+    text-align: justify;
+}
+
+.cuerpo-0{
+    margin: 2% 2% 5% 2% ;
+}
+
+.btn-hoja-vida{
+    margin-left: 40%;
+    margin-top: 6%;
+    width: 60%;
+    text-align: center;
+}

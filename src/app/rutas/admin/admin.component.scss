@@ -1,0 +1,63 @@
+.cabecera{
+    background-color:rgb(8, 168, 142) ;
+    background-image: url("./../../../assets/img/medi1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    
+    
+}
+
+.cabecera > h1 {
+background-color: rgb(8, 168, 142) ;
+width: 20%;
+padding-top: 5%;
+padding-bottom: 5%;
+border-radius:150px 0px 150px 0px;
+}
+
+
+
+:host ::ng-deep .card-container {
+    .card {
+        width: 75px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        user-select: none;
+        padding: 0;
+
+        &.primary-box {
+            background-color: var(--primary-color);
+            padding: 0;
+            color: var(--primary-color-text);
+        }
+
+        &.styled-box-green {
+            .p-ink {
+                background: rgba(#4baf50, 0.3);
+            }
+        }
+
+        &.styled-box-orange {
+            .p-ink {
+                background: rgba(#ffc106, 0.3);
+            }
+        }
+
+        &.styled-box-purple {
+            .p-ink {
+                background: rgba(#9c27b0, 0.3);
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+

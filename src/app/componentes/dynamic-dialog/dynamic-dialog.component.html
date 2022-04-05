@@ -1,0 +1,18 @@
+
+<div class="grid p-fluid">
+    <div class="col-12 md:col-4">
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+            <input [(ngModel)]="autor" type="text" pInputText placeholder="Titulo">         
+        </div>
+    </div>
+
+    <span class="p-float-label" style="margin-top: 40px;">
+        <textarea [(ngModel)]="publicacion" id="float-input" rows="10" cols="90" pInputTextarea ></textarea>
+        <label for="float-input">Información</label>
+    </span>
+
+    <button *ngIf="tipoModal == 0" pButton pRipple type="button" label="Guardar" class="p-button-outlined p-button-success" (click)="guardarPublicacion()"></button>
+    <button *ngIf="tipoModal == 1" pButton pRipple type="button" label="Actualizar" class="p-button-outlined p-button-warning" (click)="actualizarPublicacion()"></button>
+
+</div>

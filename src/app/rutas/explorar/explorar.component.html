@@ -1,0 +1,53 @@
+<div class="cabecera">
+    <h1>
+        MEDFYD
+    </h1>
+ </div>
+ <app-mega-menu></app-mega-menu>
+
+<div class="row">
+
+    <div class="col-md-2">
+
+        <img src="./../../../assets/img/doc.gif">
+        
+    </div>
+
+    <div class="col-md-10">
+        <p-paginator [rows]="10" [totalRecords]="100"> 
+            <div class="col-1">
+                <p-button icon="pi pi-refresh"></p-button>
+            </div>
+        </p-paginator>
+      
+        <div class="row">
+            <p-table [value]="publicaciones" responsiveLayout="scroll" [paginator]="true" [rows]="5">
+                <ng-template pTemplate="header">
+                    <tr >
+                        <th colspan="3" style="text-align: center;">{{fecha}}</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-public>
+                    <tr>
+                        <td colspan="3">
+                            <p-card>
+                                <ng-template pTemplate="header">
+                                    {{public.autor}}
+                                </ng-template>
+                                <ng-template pTemplate="content"> 
+                                    {{public.publicacion}}
+                                </ng-template>
+                                <ng-template pTemplate="footer">
+                                    {{public.fecharegistro}}
+                                </ng-template>
+                            </p-card>
+
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+</div>
+
+
